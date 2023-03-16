@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>InstHtmlTmp</title>
+    <link rel="stylesheet" type="text/css" href="css/general.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="js/spa.js"></script>
+    <script src="js/ajax.js"></script>
+</head>
+<body>
+
+<main id="main_content">
+
+    <h2 class="text-secondary fw-normal mb-4">Header</h2>
+
+    <a class="btn btn-outline-secondary btn-sm mb-3" href="" role="button">Button</a>
+
+    <select id="brand_heading" class="form-select mb-3" onchange="">
+        <option></option>
+        <option value="">1</option>
+        <option value="">2</option>
+        <option value="">3</option>
+    </select>
+
+    <p class="text-secondary small mb-5">
+        <span class="text-secondary text-decoration-none text-uppercase" style="cursor: pointer;" onclick="">A</span> ⋅ 
+        <span class="text-secondary text-decoration-none text-uppercase" style="cursor: pointer;" onclick="">B</span> ⋅ 
+        <span class="text-secondary text-decoration-none text-uppercase" style="cursor: pointer;" onclick="">C</span> ⋅ 
+        <span class="text-secondary text-decoration-none" style="cursor: pointer;" onclick="">all</span>
+    </p>
+
+    <div class="card border-opacity-25 mb-3">
+        <div class="row g-0">
+            <div class="col-3">
+                <div class="card-body">
+                    <img src="images/logo.svg" class="img-fluid" onclick="" style="cursor: pointer;">
+                </div>
+            </div>
+            <div class="col-9">
+                <div class="card-body">
+                    <p class="card-text mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit amet arcu quis erat placerat varius eu sit amet velit.</p>
+                    <p class="card-text text-muted small"><span onclick="" style="cursor: pointer;">Lorem ipsum</span> ⋅ <a href="" target="_blank" class="text-decoration-none">abc.com</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card border-opacity-25 mb-3">
+        <img src="images/photo.jpg" class="card-img-top" onclick="spa_content();" style="cursor: pointer;">
+        <div class="card-body">
+            <h2 class="card-title fw-normal mb-3">Lorem ipsum dolor sit amet</h2>
+            <p class="card-text mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit amet arcu quis erat placerat varius eu sit amet velit. Fusce id metus eleifend, pellentesque elit eget, iaculis lacus. Phasellus vestibulum arcu odio, at malesuada mi fringilla vel. Donec varius tincidunt libero eget dapibus. Vivamus hendrerit orci at nunc pellentesque porta. <span class="link-primary text-decoration-none" onclick="spa_content();" style="cursor: pointer;">Read more…</span></p>
+            <p class="card-text text-muted small"><span onclick="" style="cursor: pointer;">Lorem ipsum</span> ⋅ 06.02.1981</p>
+        </div>
+    </div>
+
+    <div class="card border-opacity-25 mb-3">
+        <div class="card-body">
+        <h5 class="card-text mb-2">Users</h5>
+            <p class="card-text text-muted small mb-0"><strong>User 1</strong> ⋅ user ⋅ <a href="" class="text-decoration-none">Edit…</a></p>
+            <p class="card-text text-muted small mb-0"><strong>User 2</strong> ⋅ user ⋅ <a href="" class="text-decoration-none">Edit…</a></p>
+            <p class="card-text text-muted small mb-0"><strong>User 3</strong> ⋅ user ⋅ <a href="" class="text-decoration-none">Edit…</a></p>
+        </div>
+    </div>
+
+    <form action="" method="POST" class="mb-3" enctype="multipart/form-data">
+        <div class="mb-3">
+            <label class="form-label text-muted">Text input</label>
+            <input type="text" class="form-control" name="text_input" value="" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label text-muted">List input</label>
+            <select class="form-select" name="list_input" required>
+                <option></option>
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label class="form-label text-muted">Password input</label>
+            <div class="input-group">
+                <input type="password" class="form-control" name="password_input">
+                <input type="password" class="form-control" name="password_ch_input">
+            </div>
+        </div>
+        <div class="mb-3">
+            <label class="form-label text-muted">File input</label>
+            <input class="form-control" type="file" name="file_input">
+            <img src="images/photo.jpg" class="img-fluid rounded w-25 mt-2">
+        </div>
+        <div class="mb-3">
+            <p class="text-muted small">Lorem ipsum ⋅ 06.02.1981</p>
+        </div>
+        <button type="submit" class="btn btn-primary mt-5">Button</button>
+        <a href="" class="btn btn-outline-danger mt-5">Button</a>
+    </form>
+
+</main>
+
+<nav>
+    <ul class="nav">
+        <li class="nav-item nav-mobile">
+            <blockquote class="blockquote text-secondary mb-5">Instagram Style<br>HTML Template</blockquote>
+        </li>
+        <li class="nav-item fw-semibold"><a class="nav-link link-dark" onclick="spa_search();" style="cursor: pointer;"><svg fill="currentColor" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/></svg>Search</a></li>
+        <li class="nav-item fw-semibold"><a href="" class="nav-link link-dark"><svg fill="currentColor" viewBox="0 0 16 16"><path d="M9.828.722a.5.5 0 0 1 .354.146l4.95 4.95a.5.5 0 0 1 0 .707c-.48.48-1.072.588-1.503.588-.177 0-.335-.018-.46-.039l-3.134 3.134a5.927 5.927 0 0 1 .16 1.013c.046.702-.032 1.687-.72 2.375a.5.5 0 0 1-.707 0l-2.829-2.828-3.182 3.182c-.195.195-1.219.902-1.414.707-.195-.195.512-1.22.707-1.414l3.182-3.182-2.828-2.829a.5.5 0 0 1 0-.707c.688-.688 1.673-.767 2.375-.72a5.922 5.922 0 0 1 1.013.16l3.134-3.133a2.772 2.772 0 0 1-.04-.461c0-.43.108-1.022.589-1.503a.5.5 0 0 1 .353-.146zm.122 2.112v-.002.002zm0-.002v.002a.5.5 0 0 1-.122.51L6.293 6.878a.5.5 0 0 1-.511.12H5.78l-.014-.004a4.507 4.507 0 0 0-.288-.076 4.922 4.922 0 0 0-.765-.116c-.422-.028-.836.008-1.175.15l5.51 5.509c.141-.34.177-.753.149-1.175a4.924 4.924 0 0 0-.192-1.054l-.004-.013v-.001a.5.5 0 0 1 .12-.512l3.536-3.535a.5.5 0 0 1 .532-.115l.096.022c.087.017.208.034.344.034.114 0 .23-.011.343-.04L9.927 2.028c-.029.113-.04.23-.04.343a1.779 1.779 0 0 0 .062.46z"/></svg>Item 1</a></li>
+        <li class="nav-item fw-semibold"><a href="" class="nav-link link-dark"><svg fill="currentColor" viewBox="0 0 16 16"><path d="M9.828.722a.5.5 0 0 1 .354.146l4.95 4.95a.5.5 0 0 1 0 .707c-.48.48-1.072.588-1.503.588-.177 0-.335-.018-.46-.039l-3.134 3.134a5.927 5.927 0 0 1 .16 1.013c.046.702-.032 1.687-.72 2.375a.5.5 0 0 1-.707 0l-2.829-2.828-3.182 3.182c-.195.195-1.219.902-1.414.707-.195-.195.512-1.22.707-1.414l3.182-3.182-2.828-2.829a.5.5 0 0 1 0-.707c.688-.688 1.673-.767 2.375-.72a5.922 5.922 0 0 1 1.013.16l3.134-3.133a2.772 2.772 0 0 1-.04-.461c0-.43.108-1.022.589-1.503a.5.5 0 0 1 .353-.146zm.122 2.112v-.002.002zm0-.002v.002a.5.5 0 0 1-.122.51L6.293 6.878a.5.5 0 0 1-.511.12H5.78l-.014-.004a4.507 4.507 0 0 0-.288-.076 4.922 4.922 0 0 0-.765-.116c-.422-.028-.836.008-1.175.15l5.51 5.509c.141-.34.177-.753.149-1.175a4.924 4.924 0 0 0-.192-1.054l-.004-.013v-.001a.5.5 0 0 1 .12-.512l3.536-3.535a.5.5 0 0 1 .532-.115l.096.022c.087.017.208.034.344.034.114 0 .23-.011.343-.04L9.927 2.028c-.029.113-.04.23-.04.343a1.779 1.779 0 0 0 .062.46z"/></svg>Item 2</a></li>
+        <li class="nav-item fw-semibold"><a href="" class="nav-link link-dark"><svg fill="currentColor" viewBox="0 0 16 16"><path d="M9.828.722a.5.5 0 0 1 .354.146l4.95 4.95a.5.5 0 0 1 0 .707c-.48.48-1.072.588-1.503.588-.177 0-.335-.018-.46-.039l-3.134 3.134a5.927 5.927 0 0 1 .16 1.013c.046.702-.032 1.687-.72 2.375a.5.5 0 0 1-.707 0l-2.829-2.828-3.182 3.182c-.195.195-1.219.902-1.414.707-.195-.195.512-1.22.707-1.414l3.182-3.182-2.828-2.829a.5.5 0 0 1 0-.707c.688-.688 1.673-.767 2.375-.72a5.922 5.922 0 0 1 1.013.16l3.134-3.133a2.772 2.772 0 0 1-.04-.461c0-.43.108-1.022.589-1.503a.5.5 0 0 1 .353-.146zm.122 2.112v-.002.002zm0-.002v.002a.5.5 0 0 1-.122.51L6.293 6.878a.5.5 0 0 1-.511.12H5.78l-.014-.004a4.507 4.507 0 0 0-.288-.076 4.922 4.922 0 0 0-.765-.116c-.422-.028-.836.008-1.175.15l5.51 5.509c.141-.34.177-.753.149-1.175a4.924 4.924 0 0 0-.192-1.054l-.004-.013v-.001a.5.5 0 0 1 .12-.512l3.536-3.535a.5.5 0 0 1 .532-.115l.096.022c.087.017.208.034.344.034.114 0 .23-.011.343-.04L9.927 2.028c-.029.113-.04.23-.04.343a1.779 1.779 0 0 0 .062.46z"/></svg>Item 3</a></li>
+    </ul>
+    <div class="nav-mobile">
+        <p class="text-muted small">&copy; 2023 <a href="" class="link-secondary text-decoration-none">InstHtmlTmp</a></p>
+    </div>
+</nav>
+
+<div id="logo">
+    <a href=""><img src="images/logo.svg" alt=""></a>
+</div>
+
+<div id="search" class="d-flex align-items-center justify-content-center">
+    <button type="button" class="btn-close" aria-label="Close" onclick="document.getElementById('search').style.visibility = 'hidden'; document.body.style.overflow = 'visible';"></button>
+    <form role="search" class="search-form" onkeypress="if(event.keyCode == 13) { spa_searchResult(); return false; }">
+        <input id="search_form" class="form-control form-control-lg shadow-lg rounded" type="search" placeholder="Search..." aria-label="search">
+        <p class="mt-4 ms-3">Instagram Style<br>HTML Template</p>
+    </form>
+</div>
+
+<div id="content">
+    <button type="button" class="btn-close" aria-label="Close" onclick="document.getElementById('content').style.visibility = 'hidden'; document.body.style.overflow = 'visible';"></button>
+    <div id="content_text">
+        <img src="images/photo.jpg" class="img-fluid rounded mb-4" alt="">
+        <h1 class="mb-3">Lorem ipsum dolor sit amet</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer scelerisque non eros non porta. Nulla at nisl dignissim, pretium mi a, faucibus tellus. Proin ut est a felis imperdiet vehicula. Donec lobortis semper mi, vestibulum euismod orci pulvinar vitae. Nullam tempor eleifend tempus. Duis nec dolor mattis, pellentesque odio ac, accumsan nunc. In at augue ornare, consectetur magna eget, feugiat risus. Proin sit amet faucibus ante. Praesent posuere, felis eget mollis maximus, nulla ipsum mattis felis, ut congue sem purus at leo. Praesent porta, enim sit amet venenatis volutpat, turpis est placerat nunc, et mattis nisl orci vel est. Aenean suscipit finibus velit, eu accumsan ex facilisis et. Integer tristique bibendum magna, vel sodales diam commodo eget. Nam vitae eros auctor augue convallis lacinia vitae quis velit. Donec gravida viverra faucibus. Integer condimentum ipsum est, vel luctus metus gravida venenatis.
+
+        Morbi ac quam ut nisi commodo feugiat. Pellentesque id vehicula justo. Nulla facilisi. Cras finibus gravida sem id iaculis. Curabitur nec molestie augue. Sed sapien odio, lacinia non pellentesque sed, tristique in erat. Nunc elit nulla, vulputate ac lorem ac, sagittis pellentesque erat. Integer a dui nunc. Ut ut nibh malesuada, imperdiet augue non, ullamcorper felis. Nulla et elementum sapien. Aenean elementum turpis et libero bibendum, vitae porta enim ultricies. Nulla pharetra nibh lacus, quis finibus tortor faucibus vitae. Quisque tristique leo sapien, id fermentum ligula scelerisque quis.
+
+        Vestibulum semper tellus at sem imperdiet, eu volutpat sapien auctor. Pellentesque eget nisi vitae ligula suscipit sollicitudin sit amet vel dui. Maecenas elementum tellus sed venenatis feugiat. Proin sed turpis ut augue eleifend accumsan quis et lorem. Ut nec sodales risus, eget tincidunt libero. Aenean vestibulum tellus ipsum, vitae aliquet neque semper pretium. Curabitur ut justo ut tellus vulputate lobortis. Nullam tincidunt pulvinar mi rutrum imperdiet. Maecenas sapien libero, accumsan eget justo non, aliquet lacinia felis.
+
+        Mauris eu vestibulum nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut porta vel elit at tristique. Duis eget pretium odio, nec vestibulum quam. Fusce tincidunt tincidunt sem sit amet pellentesque. Morbi id iaculis felis. Etiam ac laoreet ipsum, malesuada ornare leo. Sed bibendum sit amet elit id tristique.
+
+        In lacinia semper leo, id eleifend justo posuere quis. Vestibulum egestas mollis mi vitae vestibulum. Donec et euismod ante, non condimentum ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam dictum laoreet turpis in volutpat. In feugiat sapien eget ex fermentum, sed bibendum augue facilisis. Aliquam sed egestas sem. Vivamus elementum iaculis mi, et faucibus turpis aliquet eget.</p>
+        <p class="card-text text-muted small">Lorem ipsum ⋅ 06.02.1981</p>
+    </div>
+</div>
+
+</body>
+</html>
