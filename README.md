@@ -16,6 +16,8 @@ You need configure *.html files for your goals and, of course, images, correct *
 
 ![plot](./screenshot.png)
 
+![plot](./screenshot-w.png)
+
 ## Author
 
 [Evgenii Bykov](https://github.com/evgeniibykov)
