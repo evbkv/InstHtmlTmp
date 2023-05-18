@@ -20,7 +20,7 @@ You need configure *.html files for your goals and, of course, images, correct *
 
 ## Author
 
-[Evgenii Bykov](https://github.com/evgeniibykov)
+[Evgenii Bykov](https://github.com/evbkv)
 
 ## License
 
